@@ -1,0 +1,27 @@
+# Environment & credentials
+.env
+*.env
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# IDE & OS specific files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker / build artifacts
+*.egg-info/
+dist/
+build/
