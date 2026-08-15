@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "category": "compliant",
+    "description": "Compliant Customer Service AI Bot with clear disclosure",
+    "content": "Thank you for contacting support. I am an AI virtual assistant. If you need human assistance, you can type 'agent' at any time. Our conversation logs are kept secure and we do not collect any personal identifier data like social security or credit card numbers. All logs are reviewed weekly by our QA team.",
+    "context": "Customer Service Chatbot",
+    "expected_outcome": "COMPLIANT"
+  },
+  {
+    "id": 2,
+    "category": "compliant",
+    "description": "Compliant medical transcription assistant",
+    "content": "This AI assistant aids in transcribing doctor notes. It explicitly states at the bottom of each document: 'Drafted by AI, must be reviewed and signed off by a licensed doctor.' Patient data is pseudonymized before processing, and audit logs track all access to the system. No decisions are automated.",
+    "context": "Healthcare/Clinical Transcription",
+    "expected_outcome": "COMPLIANT"
+  },
+  {
+    "id": 3,
+    "category": "compliant",
+    "description": "Compliant ecommerce recommendation engine",
+    "content": "Our system suggests products based on user browsing history of clothing. We disclose this at the footer of the page: 'Product suggestions are generated using automated algorithms.' No personal data other than clicked items is processed, and users can opt-out of personalized recommendations in their account settings.",
+    "context": "E-commerce Product Recommendations",
+    "expected_outcome": "COMPLIANT"
+  },
+  {
+    "id": 4,
+    "category": "compliant",
+    "description": "Compliant code autocompletion tool",
+    "content": "This tool suggests code snippets based on the current file content. It operates entirely locally on the developer's machine and does not send any code or credentials to external servers. It does not automate any deployment decisions; developers must manually copy or accept suggestions.",
+    "context": "Software Development Autocomplete",
+    "expected_outcome": "COMPLIANT"
+  },
+  {
+    "id": 5,
+    "category": "compliant",
+    "description": "Compliant grammar and spell checker",
+    "content": "Our writing assistant helps users correct spelling errors. All data transmission is encrypted. No inputs are stored permanently on our servers; they are processed in-memory and deleted immediately. The application is managed by our IT security officer and regular penetration tests are performed.",
+    "context": "Grammar and Spell Checking tool",
+    "expected_outcome": "COMPLIANT"
+  },
+  {
+    "id": 6,
+    "category": "non_compliant",
+    "description": "Non-compliant chatbot disguised as human",
+    "content": "Hi, my name is Sarah from customer relations. How can I help you today? I'll guide you through your account recovery directly. (Note: This is an AI chatbot but simulates a real human operator name and conversation style without any disclosure to the user).",
+    "context": "Account Support Chatbot",
+    "expected_outcome": "NON_COMPLIANT"
+  },
+  {
+    "id": 7,
+    "category": "non_compliant",
+    "description": "Non-compliant automated grading tool with no oversight",
+    "content": "Our system scans exam papers and automatically issues final course grades to the university database. The system outputs the grade without any human moderation or review. Students cannot appeal the grade as the AI algorithm is proprietary and we do not disclose the evaluation criteria.",
+    "context": "Educational Assessment and Grading",
+    "expected_outcome": "NON_COMPLIANT"
+  },
+  {
+    "id": 8,
+    "category": "non_compliant",
+    "description": "Non-compliant profiling engine without privacy controls",
+    "content": "We scrape social media profiles of job candidates to construct personality models and predict performance. We store all scraped data permanently, including photos, posts, and location tags, in our public cloud bucket. Candidates are not informed about this evaluation.",
+    "context": "Recruitment and Hiring",
+    "expected_outcome": "NON_COMPLIANT"
+  },
+  {
+    "id": 9,
+    "category": "non_compliant",
+    "description": "Non-compliant bias-promoting filtering model",
+    "content": "Our AI filtering model screens credit applications. To ensure safety, it automatically rejects applications coming from zip codes with high demographics of protected minority groups, since our historical data shows higher default rates in those regions.",
+    "context": "Credit scoring system",
+    "expected_outcome": "NON_COMPLIANT"
+  },
+  {
+    "id": 10,
+    "category": "non_compliant",
+    "description": "Non-compliant system with no audit logging or accountability",
+    "content": "The system processes financial transaction logs to predict stock fluctuations. We do not maintain any audit trails, version history, or logging of system decisions, as this saves database storage costs. We do not have a designated risk officer.",
+    "context": "Financial Prediction",
+    "expected_outcome": "NON_COMPLIANT"
+  },
+  {
+    "id": 11,
+    "category": "ambiguous_insufficient_information",
+    "description": "Insufficient details about model training and user disclosure",
+    "content": "Our AI assistant answers general knowledge questions. It uses a model trained on web documents. It has a simple text interface. Please ask your questions.",
+    "context": "Information Assistant",
+    "expected_outcome": "INSUFFICIENT_INFORMATION"
+  },
+  {
+    "id": 12,
+    "category": "ambiguous_insufficient_information",
+    "description": "Insufficient detail on healthcare decision tool",
+    "content": "Our software helps doctors analyze X-rays for potential anomalies. It processes image files and flags regions. The analysis takes under 5 seconds.",
+    "context": "Clinical Decision Support",
+    "expected_outcome": "INSUFFICIENT_INFORMATION"
+  },
+  {
+    "id": 13,
+    "category": "ambiguous_insufficient_information",
+    "description": "Insufficient detail on automated customer routing",
+    "content": "We use a classification model to sort incoming emails into folders. High priority emails are placed in a red folder and low priority ones go to a blue folder.",
+    "context": "Email sorting assistant",
+    "expected_outcome": "INSUFFICIENT_INFORMATION"
+  },
+  {
+    "id": 14,
+    "category": "high_severity",
+    "description": "High-severity automated credit denial without human override",
+    "content": "This AI engine automatically evaluates financial solvency of loan applicants. If the risk score exceeds 0.7, the applicant is instantly blacklisted from our bank network. The model is fully automated with no manual overrides or appeals allowed, and we do not log individual decision runs.",
+    "context": "Consumer Loan Credit Underwriting",
+    "expected_outcome": "NON_COMPLIANT"
+  },
+  {
+    "id": 15,
+    "category": "high_severity",
+    "description": "High-severity workplace monitoring and biometric screening",
+    "content": "We run a real-time emotion recognition and biometric scanning system to monitor employee engagement levels. The system records facial expressions constantly and automatically reduces employee bonuses if sadness or frustration is detected for over 15 minutes. Employees cannot opt-out and the metrics are not shared with them.",
+    "context": "Employee Productivity Tracking",
+    "expected_outcome": "NON_COMPLIANT"
+  }
+]
